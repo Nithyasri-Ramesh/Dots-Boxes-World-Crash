@@ -1,0 +1,155 @@
+export const THEMES = {
+  neon: {
+    id: 'neon',
+    name: 'Neon Cyber Grid',
+    emoji: '✨',
+    description: 'Futuristic neon-lit cyber world',
+    unlockXP: 0,
+    colors: {
+      primary: '#00f5ff',
+      secondary: '#ff00ff',
+      accent: '#00ff88',
+      bg: '#050510',
+      bgGradient: 'linear-gradient(135deg, #050510 0%, #0a0520 50%, #050510 100%)',
+      dot: '#00f5ff',
+      lineP1: '#00f5ff',
+      lineP2: '#ff00ff',
+      boxP1: 'rgba(0,245,255,0.2)',
+      boxP2: 'rgba(255,0,255,0.2)',
+      hud: 'rgba(0,245,255,0.1)',
+    },
+    particles: 'cyber',
+    lineStyle: 'neon',
+  },
+  ice: {
+    id: 'ice',
+    name: 'Ice World',
+    emoji: '❄️',
+    description: 'Frozen tundra with snowfall',
+    unlockXP: 200,
+    colors: {
+      primary: '#7dd3fc',
+      secondary: '#bae6fd',
+      accent: '#e0f2fe',
+      bg: '#020d1a',
+      bgGradient: 'linear-gradient(135deg, #020d1a 0%, #041628 50%, #020d1a 100%)',
+      dot: '#bae6fd',
+      lineP1: '#7dd3fc',
+      lineP2: '#a5b4fc',
+      boxP1: 'rgba(125,211,252,0.2)',
+      boxP2: 'rgba(165,180,252,0.2)',
+      hud: 'rgba(125,211,252,0.1)',
+    },
+    particles: 'snow',
+    lineStyle: 'frost',
+  },
+  lava: {
+    id: 'lava',
+    name: 'Lava World',
+    emoji: '🔥',
+    description: 'Volcanic hellscape with fire',
+    unlockXP: 500,
+    colors: {
+      primary: '#f97316',
+      secondary: '#ef4444',
+      accent: '#fbbf24',
+      bg: '#0d0500',
+      bgGradient: 'linear-gradient(135deg, #0d0500 0%, #1a0800 50%, #0d0500 100%)',
+      dot: '#f97316',
+      lineP1: '#f97316',
+      lineP2: '#ef4444',
+      boxP1: 'rgba(249,115,22,0.2)',
+      boxP2: 'rgba(239,68,68,0.2)',
+      hud: 'rgba(249,115,22,0.1)',
+    },
+    particles: 'fire',
+    lineStyle: 'fire',
+  },
+  space: {
+    id: 'space',
+    name: 'Space Theme',
+    emoji: '🚀',
+    description: 'Cosmic nebula voyage',
+    unlockXP: 1000,
+    colors: {
+      primary: '#a855f7',
+      secondary: '#6366f1',
+      accent: '#ec4899',
+      bg: '#020008',
+      bgGradient: 'linear-gradient(135deg, #020008 0%, #08001a 50%, #020008 100%)',
+      dot: '#a855f7',
+      lineP1: '#a855f7',
+      lineP2: '#6366f1',
+      boxP1: 'rgba(168,85,247,0.2)',
+      boxP2: 'rgba(99,102,241,0.2)',
+      hud: 'rgba(168,85,247,0.1)',
+    },
+    particles: 'stars',
+    lineStyle: 'plasma',
+  },
+}
+
+export const PENS = {
+  standard: {
+    id: 'standard',
+    name: 'Standard',
+    emoji: '✏️',
+    description: 'Classic pen',
+    unlockXP: 0,
+    glowIntensity: 1,
+    animSpeed: 1,
+  },
+  neon: {
+    id: 'neon',
+    name: 'Neon Pen',
+    emoji: '⚡',
+    description: 'Electric neon glow',
+    unlockXP: 300,
+    glowIntensity: 3,
+    animSpeed: 1.5,
+  },
+  fire: {
+    id: 'fire',
+    name: 'Fire Pen',
+    emoji: '🔥',
+    description: 'Blazing fire trails',
+    unlockXP: 700,
+    glowIntensity: 2,
+    animSpeed: 2,
+  },
+  electric: {
+    id: 'electric',
+    name: 'Electric Pen',
+    emoji: '⚡',
+    description: 'Crackling electricity',
+    unlockXP: 1200,
+    glowIntensity: 4,
+    animSpeed: 3,
+  },
+}
+
+export const AI_DIFFICULTIES = [
+  { id: 'beginner', name: 'Beginner', emoji: '🐣', description: 'Random moves', color: '#00ff88' },
+  { id: 'defensive', name: 'Defensive', emoji: '🛡️', description: 'Avoids giving boxes', color: '#00f5ff' },
+  { id: 'aggressive', name: 'Aggressive', emoji: '⚔️', description: 'Hunts for boxes', color: '#f97316' },
+  { id: 'trap', name: 'Trap AI', emoji: '🕸️', description: 'Sets up chain traps', color: '#a855f7' },
+]
+
+export const DAILY_CHALLENGES = [
+  { id: 'speedrun', title: 'Speed Demon', desc: 'Win under 2 minutes', emoji: '⏱️', reward: 150 },
+  { id: 'combo', title: 'Combo King', desc: 'Get 5 combo chains in one game', emoji: '🔥', reward: 200 },
+  { id: 'aggressive', title: 'Slayer', desc: 'Defeat Aggressive AI', emoji: '⚔️', reward: 250 },
+  { id: 'perfect', title: 'Perfectionist', desc: 'Win with 80%+ box capture rate', emoji: '💎', reward: 300 },
+  { id: 'noloss', title: 'Untouchable', desc: 'Win without letting AI get 3+ in a row', emoji: '🛡️', reward: 350 },
+]
+
+export const GRID_SIZES = [
+  { id: 'small', label: '3×3', size: 3, description: 'Quick game (~2 min)' },
+  { id: 'medium', label: '4×4', size: 4, description: 'Standard (~5 min)' },
+  { id: 'large', label: '5×5', size: 5, description: 'Extended (~10 min)' },
+  { id: 'huge', label: '6×6', size: 6, description: 'Epic battle (~15 min)' },
+]
+
+export const AVATARS = ['🧑‍🚀', '👾', '🤖', '🦊', '🐉', '🦁', '🦋', '🌟', '💀', '🎮', '🔮', '⚡']
+
+export const REACTIONS = ['😎', '😂', '😭', '🔥', '💀', '🎉', '😤', '🤯']
